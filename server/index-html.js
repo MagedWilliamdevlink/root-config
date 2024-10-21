@@ -16,7 +16,7 @@ app.use("*", (req, res, next) => {
 
   const importMapsPromise = getImportMaps({
     url:
-      "http://127.0.0.1:5500/frontend-shared-dependencies/importmap.json",
+      "http://127.0.0.1:5500/root-config/importmap.json",
     // "https://storage.googleapis.com/isomorphic.microfrontends.app/importmap.json",
     nodeKeyFilter(importMapKey) {
       return importMapKey.startsWith("@isomorphic-mf");

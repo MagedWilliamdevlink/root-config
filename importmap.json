@@ -1,0 +1,11 @@
+{
+  "imports": {
+    "@isomorphic-mf/navbar": "http://localhost:8500/isomorphic-mf-navbar.js",
+    "@isomorphic-mf/navbar/": "http://localhost:8500/",
+    "@isomorphic-mf/root-config": "http://localhost:9000/isomorphic-mf-root-config.js",
+    "@isomorphic-mf/root-config/": "http://localhost:9000/",
+    "react": "https://cdn.jsdelivr.net/npm/react@16.13.1/umd/react.production.min.js",
+    "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@16.13.1/umd/react-dom.production.min.js",
+    "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.5.3/lib/system/single-spa.min.js"
+  }
+}
