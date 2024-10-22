@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@node-loader/core": "^2.0.0",
     "@node-loader/http": "^2.0.0",
     "@node-loader/import-maps": "^1.1.0",
     "@types/jest": "^27.0.1",
@@ -15,7 +16,6 @@
     "@babel/plugin-transform-runtime": "^7.23.3",
     "@babel/preset-env": "^7.23.3",
     "@babel/runtime": "^7.23.3",
-    "@node-loader/core": "^2.0.0",
     "clean-webpack-plugin": "^4.0.0",
     "concurrently": "^6.2.1",
     "cross-env": "^7.0.3",
@@ -44,7 +44,7 @@
     "format": "prettier --write .",
     "lint": "eslint src --ext js",
     "prepare": "husky install",
-    "start:node": "node --loader @node-loader/core server/server.js",
+    "start:node": "node --experimental-loader @node-loader/http server/server.js",
     "start:webpack": "webpack serve --port 9876 --env isLocal --mode development",
     "test": "cross-env BABEL_ENV=test jest --passWithNoTests"
   },
