@@ -1,7 +1,7 @@
 {
   "imports": {
-    "@isomorphic-mf/navbar": "http://localhost:8080/isomorphic-mf-navbar.js",
-    "@isomorphic-mf/navbar/": "http://localhost:8080/",
+    "@isomorphic-mf/navbar": "http://127.0.0.1:5500/_navbar/dist/isomorphic-mf-navbar.js",
+    "@isomorphic-mf/navbar/": "http://127.0.0.1:5500/_navbar/dist/",
     "@isomorphic-mf/root-config": "http://localhost:9000/isomorphic-mf-root-config.js",
     "@isomorphic-mf/root-config/": "http://localhost:9000/",
     "react": "https://cdn.jsdelivr.net/npm/react@16.13.1/umd/react.production.min.js",

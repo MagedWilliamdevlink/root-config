@@ -24,6 +24,7 @@ app.use("*", (req, res, next) => {
     req,
     allowOverrides: true,
   }).then(({ nodeImportMap, browserImportMap }) => {
+    console.log(global.nodeLoader)
     global.nodeLoader.setImportMapPromise(Promise.resolve(nodeImportMap));
     if (developmentMode) {
       browserImportMap.imports["@isomorphic-mf/root-config"] =

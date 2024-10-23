@@ -5,6 +5,7 @@
     "@node-loader/import-maps": "^1.1.0",
     "@types/jest": "^27.0.1",
     "@types/systemjs": "^6.1.1",
+    "babel-loader": "^9.2.1",
     "morgan": "^1.10.0",
     "single-spa": "^5.9.3",
     "single-spa-layout": "^1.6.0",
@@ -44,7 +45,7 @@
     "format": "prettier --write .",
     "lint": "eslint src --ext js",
     "prepare": "husky install",
-    "start:node": "node --experimental-loader @node-loader/http server/server.js",
+    "start:node": "node --experimental-loader @node-loader/core server/server.js",
     "start:webpack": "webpack serve --port 9876 --env isLocal --mode development",
     "test": "cross-env BABEL_ENV=test jest --passWithNoTests"
   },
